@@ -1,24 +1,22 @@
 # vue-ts-admin
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+后台管理系统模板
 
 #### 软件架构
-软件架构说明
+软件架构说明：vue3+ts+element-plus
 
 
 #### 安装教程
 
 1.  git clone
-2.  cd vue-ts-admin
+2.  cd vue3-ts-admin
 3.  npm i
 
 #### 使用说明
 
-1.  npm run dev
-2.  npm run build
+1.  运行npm run dev
+2.  打包npm run build
 3.  xxxx
 
 #### 参与贡献

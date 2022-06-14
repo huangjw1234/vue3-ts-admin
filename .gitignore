@@ -3,10 +3,11 @@ node_modules
 dist
 dist-ssr
 *.local
-package-lock.json
+#package-lock.json
 yarn.lock
 stats.html
 *.log
 .nuxt
 nuxt.d.ts
 .output
+.vscode
