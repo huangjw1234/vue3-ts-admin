@@ -1,9 +1,10 @@
 import { validatenull } from '/@/util/validate'
 import { getToken } from './util/auth'
+import { getStore } from './util/store'
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
 import router from './router/index'
-import store from './store/index'
+import store from './store/store'
 
 NProgress.configure({ showSpinner: false })
 
@@ -15,6 +16,9 @@ router.beforeEach((to, form, next) => {
         path: 'login',
       })
     } else {
+      if (!(store.state as any).user.userInfo.userId) {
+        store.commit('SET_USERINFO', getStore('userInfo'))
+      }
       const value = to.query.src || to.fullPath
       const label = to.query.name || to.name
       const meta = to.meta || {}

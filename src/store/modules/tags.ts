@@ -1,7 +1,7 @@
 import { Store } from 'vuex'
 import { setStore, getStore } from '/@/util/store'
 import { diff } from '/@/util/util'
-import { tagState, tag } from '../type'
+import { module, tagState, tag } from '../type'
 import router from '/@/router/index'
 
 const tagObj = {
@@ -40,7 +40,7 @@ function setFirstPage(tagList: Array<tag>) {
   }
 }
 
-const tags = {
+const tags: module<tagState> = {
   state() {
     return {
       tagList: getStore('tagList', 'session') || [firstPage],
